@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyMovie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I81-K2-Lae">
+                                <rect key="frame" x="20" y="726" width="374" height="45"/>
+                                <color key="backgroundColor" red="0.51729874460000003" green="1" blue="0.77396694899999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="UKe-51-FyI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="カメラ起動！！！">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="VideoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cwb-ZO-87l"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iUe-Jc-RBh">
+                                <rect key="frame" x="20" y="44" width="374" height="378"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="378" id="0uf-do-FUg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1b-dW-u1p">
+                                <rect key="frame" x="20" y="795" width="374" height="45"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="kRx-0Q-uPs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="アルバムから選択">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="SaveVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1BK-qu-1yR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iUe-Jc-RBh" firstAttribute="trailing" secondItem="I81-K2-Lae" secondAttribute="trailing" id="0Y2-Y1-SPS"/>
+                            <constraint firstItem="iUe-Jc-RBh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5n3-UE-aNh"/>
+                            <constraint firstItem="I1b-dW-u1p" firstAttribute="centerX" secondItem="I81-K2-Lae" secondAttribute="centerX" id="Eya-xy-IiM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="I81-K2-Lae" secondAttribute="bottom" constant="91" id="LEp-is-yhS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="I1b-dW-u1p" secondAttribute="bottom" constant="22" id="NXU-hZ-H1g"/>
+                            <constraint firstItem="I1b-dW-u1p" firstAttribute="top" secondItem="I81-K2-Lae" secondAttribute="bottom" constant="24" id="RYJ-TO-LWD"/>
+                            <constraint firstItem="I1b-dW-u1p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="U3r-DT-Tub"/>
+                            <constraint firstItem="I81-K2-Lae" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WJv-vd-i1s"/>
+                            <constraint firstItem="I1b-dW-u1p" firstAttribute="top" secondItem="I81-K2-Lae" secondAttribute="bottom" constant="24" id="YzT-LU-Rdm"/>
+                            <constraint firstItem="I1b-dW-u1p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uMZ-Zj-EAG"/>
+                            <constraint firstItem="iUe-Jc-RBh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ue5-HY-gnB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I81-K2-Lae" secondAttribute="trailing" constant="20" id="wzI-bz-gvU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I1b-dW-u1p" secondAttribute="trailing" constant="20" id="ysT-HH-DzB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Videoimg" destination="iUe-Jc-RBh" id="gTK-qe-vTH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,37 @@
+{7 items
+    "latitude":-74
+    "longitude":40.7
+    "timezone":"Antarctica/Syowa"
+    "currently":{17 items
+        "time":1619679011
+        "summary":"曇り"
+        "icon":"cloudy"
+        "precipIntensity":0
+        "precipProbability":0
+        "temperature":-50.54
+        "apparentTemperature":-71.12
+        "dewPoint":-66.93
+        "humidity":0.13
+        "pressure":1011.5
+        "windSpeed":7.2
+        "windGust":9.55
+        "windBearing":129
+        "cloudCover":0.89
+        "uvIndex":0
+        "visibility":16.093
+        "ozone":264.2
+    }
+    "hourly":{3 items
+        "summary":"一日中曇り。"
+        "icon":"partly-cloudy-day"
+        "data":169 items
+        [0 - 100]
+        [100 - 169]
+    }
+    "flags":{3 items
+        "sources":[...]5 items
+        "nearest-station":72.322
+        "units":"si"
+    }
+    "offset":3
+}
