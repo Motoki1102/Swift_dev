@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="flagDisplay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toN-BO-D2q">
+                                <rect key="frame" x="160" y="517" width="94" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="2vi-a7-ww2"/>
+                                    <constraint firstAttribute="height" constant="60" id="daY-cP-Yaf"/>
+                                </constraints>
+                                <state key="normal" title="画面非表示"/>
+                                <connections>
+                                    <action selector="flagDisplayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dtd-As-AOX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewg-L0-Hc0">
+                                <rect key="frame" x="160" y="365" width="94" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="rdd-MZ-e88"/>
+                                    <constraint firstAttribute="width" constant="94" id="yFA-Ed-ecI"/>
+                                </constraints>
+                                <state key="normal" title="画面表示"/>
+                                <connections>
+                                    <action selector="DisplayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iLU-se-PnN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ボタンを押すとラベルが消えるよ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D76-HK-2Rh">
+                                <rect key="frame" x="20" y="160" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2ZL-7q-nYG"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="K5g-LL-kc5"/>
+                                    <constraint firstAttribute="width" constant="374" id="LNY-vR-VWN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="toN-BO-D2q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="36G-HZ-2WN"/>
+                            <constraint firstItem="D76-HK-2Rh" firstAttribute="centerX" secondItem="toN-BO-D2q" secondAttribute="centerX" id="7LG-am-yWV"/>
+                            <constraint firstItem="toN-BO-D2q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="99" id="KxE-oS-Os0"/>
+                            <constraint firstItem="ewg-L0-Hc0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-53" id="P7j-0P-b7j"/>
+                            <constraint firstItem="ewg-L0-Hc0" firstAttribute="leading" secondItem="toN-BO-D2q" secondAttribute="leading" id="RIM-s8-wrR"/>
+                            <constraint firstItem="D76-HK-2Rh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="S6B-FV-Z4h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="toN-BO-D2q" secondAttribute="bottom" constant="285" id="SPd-rs-MXj"/>
+                            <constraint firstItem="D76-HK-2Rh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="116" id="TV8-VO-G86"/>
+                            <constraint firstItem="D76-HK-2Rh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="woU-H5-VBC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="flagDisplayLabel" destination="D76-HK-2Rh" id="3g9-p3-3et"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
